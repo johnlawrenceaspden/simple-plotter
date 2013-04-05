@@ -8,7 +8,7 @@ http://johnlawrenceaspden.blogspot.co.uk/2009/11/behold-in-its-full-glory-progra
 
 ## Usage
 
-
+```
 
 (use 'simple-plotter.core)
 
@@ -17,7 +17,7 @@ http://johnlawrenceaspden.blogspot.co.uk/2009/11/behold-in-its-full-glory-progra
 (doseq [x (range 1024)]
   (plot x (+ 384 (* 376 (Math/sin (* Math/PI (/ x 512)))))))
 
-
+```
 
 
 
