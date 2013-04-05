@@ -10,7 +10,7 @@ http://johnlawrenceaspden.blogspot.co.uk/2009/11/behold-in-its-full-glory-progra
 
 Plot the graph of sine zx-style, conceding only that there are more pixels on a modern screen
 
-```
+```clojure
 (use 'simple-plotter.core)
 
 (create-window "sine")
