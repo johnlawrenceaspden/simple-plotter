@@ -11,7 +11,6 @@ http://johnlawrenceaspden.blogspot.co.uk/2009/11/behold-in-its-full-glory-progra
 Plot the graph of sine zx-style, conceding only that there are more pixels on a modern screen
 
 ```
-
 (use 'simple-plotter.core)
 
 (create-window "sine")
@@ -27,13 +26,16 @@ Plot the graph of sine zx-style, conceding only that there are more pixels on a 
 
 
 ```
-Alternatively, get the plotter to do all the scaling for you
+Alternatively, get the plotter to do all the scaling for you:
 
 ```
-;; Now in more normal coordinates
+
+(use 'simple-plotter.core)
+
 (create-window "sine in sane coords" 200 100 black white -7.0 7.0 -1.0 1.0)
 (doseq [x (range -7 7 0.01)]
   (draw-to x (Math/sin (* Math/PI x))))
+
 ;; axes
 (ink lightgray)
 (axes)
