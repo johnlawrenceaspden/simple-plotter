@@ -34,7 +34,7 @@ http://johnlawrenceaspden.blogspot.co.uk/2009/11/behold-in-its-full-glory-progra
 (plot 127 0) (draw 0 175)
 ```
 
-Plot the graph of sine zx-style, conceding only that there are more pixels on a modern screen
+Let us concede that having more pixels on a modern screen is a good thing:
 
 ```clojure
 (use 'simple-plotter.core)
