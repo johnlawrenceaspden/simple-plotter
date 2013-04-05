@@ -13,7 +13,7 @@ http://johnlawrenceaspden.blogspot.co.uk/2009/11/behold-in-its-full-glory-progra
 ```clojure
 ;; The classic ZX Spectrum sine drawing program
 
-(use 'simple-plotter)
+(use 'simple-plotter.core)
 (create-window "ZX Graphics" 256 176)
 
 ;; 10 FOR X = 1 TO 255
