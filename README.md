@@ -2,8 +2,10 @@
 
 An attempt to make plotting as easy on a modern computer running clojure as it used to be on a ZX Spectrum. 
 
-See:
+See my original blogpost about simple plotter:
 http://www.learningclojure.com/2010/09/graphics-like-its-1979-how-to-get.html
+
+Or the original rant:
 http://johnlawrenceaspden.blogspot.co.uk/2009/11/behold-in-its-full-glory-program-that-i.html
 
 ## Usage
