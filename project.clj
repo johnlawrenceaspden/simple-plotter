@@ -1,4 +1,4 @@
-(defproject simple-plotter "0.1.1-SNAPSHOT"
+(defproject simple-plotter "0.1.1"
   :description "Graphics like it's 1979"
   :url "http://github.com/johnlawrenceaspden/simple-plotter"
   :license {:name "Eclipse Public License"
