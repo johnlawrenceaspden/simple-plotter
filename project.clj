@@ -1,4 +1,4 @@
-(defproject simple-plotter "0.1.1"
+(defproject simple-plotter "0.1.2"
   :description "Graphics like it's 1979"
   :url "http://github.com/johnlawrenceaspden/simple-plotter"
   :license {:name "Eclipse Public License"
@@ -9,4 +9,4 @@
 ;; lein clean
 ;; lein pom
 ;; lein jar
-;; scp pom.xml target/simple-plotter-0.1.1.jar clojars@clojars.org:
+;; scp pom.xml target/simple-plotter-0.1.2.jar clojars@clojars.org:

@@ -53,7 +53,8 @@
       ;; in GNOME. How to get that from the OS? 
       (.setSize (+ width 2) (+ height 32))
       (.setVisible true))
-    {:ink-color (atom ink)
+    {:frame frame
+     :ink-color (atom ink)
      :paper-color paper-color
      :current-position (atom [0,0])
      :lines lines
@@ -97,6 +98,8 @@
 ;; delete all the lines in the plotter
 (defn- remove-lines [plotter] (swap! (plotter :lines) (constantly [])))
 
+(defn- dispose[plotter] (. (plotter :frame) dispose))
+
 ;; We have an idea of the current plotter
 (def current-plotter (atom nil))
 
@@ -128,6 +131,9 @@
 ;;      (primitive-line plotter x1 y1 x1 y1)
 ;;      (set-current-position plotter [x1 y1])))
 ;; we can say:
+
+(ddefn destroy []
+       (dispose plotter))
 
 (ddefn plot [x1 y1]
        (primitive-line plotter x1 y1 x1 y1)
